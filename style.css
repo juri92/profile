@@ -1,6 +1,8 @@
+
+
 .img-circle {
   border-radius: 50%;
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, .5);
 }
 
 p {
@@ -17,7 +19,7 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(40, 72, 40);
   margin-bottom: 30px;
@@ -26,6 +28,7 @@ h2 {
 
 h3 {
   text-align: left;
+  font-size: 25px;
 }
 
 p{
@@ -50,7 +53,7 @@ a {
 
 
 .container {
-  width: 700px;   /* This sets the width */
+  width: 900px;   /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
   text-align: center;
 
@@ -101,23 +104,71 @@ a {
   background-color:rgb(90, 90, 231);
 }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
+.video {
+  display: flex;
+  margin: 30px 5px;
 }
 
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
+.video iframe {
+  border-radius: 5px;
+  margin: 10px;
+  flex-grow: 1;
+  height: 150px;
+  width: 150px;
+}
+
+.video img {
+  border-radius: 5px;
+  margin: 10px;
+  flex-grow: 1;
+  height: 150px;
+  width: 150px;
+}
+
+@media (max-width: 340px) {
+  /* For a screen < 540px, this CSS will be read */
   .container {
-    width: 500px;
+    width: 140px;
   }
 }
 
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
+    width: 350px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 600px;
+  }
+  .video iframe {
+    height: 300px;
     width: 300px;
   }
 }
+
+/* @media (max-width: 1200px) {
+
+  .container {
+    width: 900px;
+  }
+
+  .video iframe {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 960px) {
+
+  .container {
+    width:800px;
+  }
+  .video iframe {
+    height: 400px;
+    width: 400px;
+  }
+} */
